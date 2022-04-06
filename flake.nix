@@ -18,7 +18,6 @@
       };
 
     in rec {
-      #apps.mates = { type = "app"; program = "${mates}/bin/mates"; };
       # by default, we get the @fhs@ environment to play around in.
       packages = { mates = pkgs.callPackage ./mates.nix {};
                  };
